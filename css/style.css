@@ -1,0 +1,573 @@
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+header{
+  text-align: center;
+}
+
+header img {
+  width: 60%;
+}
+.menu-btn {
+  position: fixed;
+  top: 5%;
+  left: 15px;
+  display: flex;
+  height: 30px;
+  width: 30px;
+  justify-content: center;
+  align-items: center;
+  z-index: 90;
+  background-color: none;
+}
+
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+  content: '';
+  display: block;
+  height: 4px;
+  width: 30px;
+  border-radius: 3px;
+  background-color: #000;
+  position: absolute;
+}
+.menu-btn span:before {
+  bottom: 8px;
+}
+.menu-btn span:after {
+  top: 8px;
+}
+
+#menu-btn-check:checked ~ .menu-btn span {
+  background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+}
+
+#menu-btn-check:checked ~ .menu-btn span::before {
+  bottom: 0;
+  transform: rotate(45deg);
+}
+
+#menu-btn-check:checked ~ .menu-btn span::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+#menu-btn-check {
+  display: none;
+}
+
+#menu-btn-check:checked ~ .menu-content {
+  left: 0;/*メニューを画面内へ*/
+}
+
+.menu-content {
+  width: 200px;
+  height: 450px;
+  position: fixed;
+  top: 80px;
+  right: 100%;
+  z-index: 80;
+  margin-right: 15px;
+}
+
+.menu-content ul {
+  padding: 20px;
+  text-align: left;
+}
+.menu-content ul li {
+  list-style: none;
+}
+.menu-content ul li a {
+  display: block;
+  width: 100%;
+  font-size: 20px;
+  box-sizing: border-box;
+  color:#000;
+  text-decoration: none;
+  padding: 10px 15px 10px 0;
+  position: relative;
+  font-family: serif;
+}
+
+.menu-content ul li :hover {
+  opacity: 0.6;
+}
+
+.aisatsu {
+  padding-left: 10%;
+  background-color: #f5f5f5;
+  height: 500px;
+}
+
+.aisatsu img {
+  width: 10%;
+  padding-top: 7%;
+}
+
+.aisatsu_text img{
+  width: 90%;
+  padding-top: 5%;
+}
+
+.aboutus {
+  padding-top: 10%;
+  padding-left: 10%;
+}
+
+.aboutus img {
+  width: 16%;
+}
+
+.potentiality {
+ text-align: center;
+ padding-top: 3%;
+}
+
+.potentiality img {
+  width: 20%;
+}
+
+.aboutus_text {
+  padding-top: 5%;
+}
+
+.aboutus_text img {
+  width: 80%;
+}
+
+.readmore {
+  text-align: right;
+  padding-top: 5%;
+  padding-right: 5%;
+  padding-bottom: 10%;
+}
+
+.readmore img {
+  width: 10%;
+}
+
+.readmore img:hover {
+  opacity: 0.6;
+}
+
+.works {
+  padding-top: 7%;
+  padding-left: 10%;
+  background-color: #f5f5f5;
+}
+
+.works img {
+  width: 15%;
+}
+
+.photoworks {
+  text-align: center;
+  padding-top: 5%;
+}
+
+.photoworks img {
+  width: 15%;
+}
+
+.movieworks {
+  text-align: center;
+  padding-top: 5%;
+}
+
+.movieworks img {
+  width: 15%;
+}
+
+.video {
+  text-align: center;
+  padding-top: 5%;
+}
+
+.works_readmore {
+  text-align: right;
+  padding-top: 5%;
+  padding-right: 5%;
+  padding-bottom: 10%;
+}
+
+.works_readmore img {
+  width: 11%;
+}
+
+.works_readmore img:hover {
+  opacity: 0.6;
+}
+.ourservice {
+  padding-top: 15%;
+  padding-left: 10%;
+}
+
+.ourservice img {
+  width: 20%;
+}
+
+.table {
+  text-align : center;
+  padding-top: 5%;
+}
+
+.table img {
+  width: 60%;
+}
+
+.contact {
+  text-align: center;
+  padding-top: 10%;
+}
+
+.contact img:hover {
+  opacity: 0.6;
+}
+
+.fotter {
+  padding-top: 15%;
+}
+
+.fotter p {
+  font-size: 12px;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  min-width: 1150px;
+  background: #000;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  text-align: center;
+  border-bottom: solid 2px #000;
+  margin: 0;
+  padding-top: 1%;
+  padding-bottom: 1%;
+
+}
+
+.header img{
+  width: 4%;
+}
+
+.image{
+  padding-top: 5%;
+}
+
+.image img {
+  width: 90%;
+}
+
+.vision {
+  padding-top: 15%;
+}
+
+.vision img {
+  width: 10%;
+}
+
+.vision_text {
+  padding-top: 3%;
+}
+
+.vision_text img {
+  width: 70%;
+}
+
+.mission {
+  padding-top: 10%;
+}
+
+.mission img {
+  width: 13%;
+}
+
+.mission_text {
+  padding-top: 3%;
+}
+
+.mission_text img {
+  width: 70%;
+}
+
+.value {
+  padding-top: 10%;
+}
+
+.value img {
+  width: 10%;
+}
+
+.value_text {
+  padding-top: 3%;
+}
+
+.value_text img {
+  width: 23%;
+}
+
+.basedoon {
+  padding-top: 10%;
+}
+
+.basedon_text {
+  padding-top: 3%;
+}
+
+.basedon_text img {
+  width: 40%;
+}
+
+.basedon_text2 {
+  padding-top: 5%;
+}
+
+.basedon_text2 img {
+  width: 60%;
+}
+
+.price {
+  padding-top: 5%;
+}
+
+.price img {
+  width: 10%;
+}
+
+.price :hover {
+  opacity: 0.6;
+}
+
+.ourservice_wrap {
+  padding-top: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.ourservice_wrap img {
+  width: 25%;
+}
+
+.ourservice_price {
+  padding-top: 5%;
+}
+
+.ourservice_price img {
+  width: 100%;
+}
+
+.ourservice_table {
+  padding-top: 10%;
+}
+
+.ourservice_table img {
+  width: 100%;
+}
+
+.ourservice_text {
+  padding-top: 2%;
+}
+
+.ourservice_text img {
+  width: 40%;
+}
+
+.ourservice_contact {
+  padding-left: 10%;
+  padding-top: 5%;
+}
+
+.ourservice_contact img {
+  width: 16%;
+}
+
+.movieworks2 {
+  padding-top: 5%;
+  padding-left: 5%;
+}
+
+.movieworks2 img {
+  width: 18%;
+}
+
+.movieworks_text {
+  padding-top: 5%;
+}
+
+.movieworks_text img {
+  width: 80%;
+}
+
+.reelmovie {
+  padding-top: 10%;
+  padding-right: 10%;
+  text-align: center;
+  background-image: url(image/movieworks/haikei.png1);
+}
+
+.reelmovie img {
+  width: 30%;
+}
+
+.reelmovie_video {
+  padding-top: 5%;
+  padding-right: 10%;
+  text-align: center;
+}
+
+.weddingmovie {
+  padding-top: 10%;
+  padding-right: 10%;
+  text-align: center;
+}
+
+.weddingmovie img {
+  width: 16%;
+}
+
+.weddingmovie_video {
+  padding-top: 5%;
+  padding-right: 10%;
+  text-align: center;
+}
+
+.biyoushipr {
+  padding-top: 10%;
+  padding-right: 10%;
+  text-align: center;
+}
+
+.biyoushipr img {
+  width: 13%;
+}
+
+.biyoushipr_video {
+  padding-top: 5%;
+  padding-right: 10%;
+  text-align: center;
+}
+
+.singersongwriter {
+  padding-top: 10%;
+  padding-right: 10%;
+  text-align: center;
+}
+
+.singersongwriter img {
+  width:  30%;
+}
+
+.singersongwriter_video {
+  padding-top: 5%;
+  padding-right: 10%;
+  text-align: center;
+}
+
+.photoworks2 {
+  padding-left: 10%;
+}
+
+.photoworks2 img{
+  width: 20%;
+  padding-top: 5%;
+}
+
+
+.work1 {
+  padding-top: 5%;
+}
+
+.work1 img {
+  width: 5%;
+}
+
+li {
+  list-style: flex;
+}
+
+/*====================================================================
+slick
+====================================================================*/
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+.sliderArea {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+.sliderArea.w300 {
+  max-width: 300px;
+}
+.slick-slide {
+  margin: 0 5px;
+}
+.slick-slide img {
+  width: 100%;
+  height: auto;
+}
+.slick-prev, .slick-next {
+  z-index: 1;
+}
+.slick-prev:before, .slick-next:before {
+  color: #000;
+}
+.slick-slide {
+  transition: all ease-in-out .3s;
+  opacity: .2;
+}
+.slick-active {
+  opacity: 1;
+}
+.slick-current {
+  opacity: 1;
+}
+.thumb {
+  margin: 20px 0 0;
+}
+.thumb .slick-slide {
+  cursor: pointer;
+}
+.thumb .slick-slide:hover {
+  opacity: .7;
+
+}
+.section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+.section p._a {
+  font-size: 12px;
+  font-weight: bold;
+  margin: 30px 0 0;
+}
+.section p._a .link {
+  display: inline-block;
+  color: #607D8B;
+  padding-left: 1.3em;
+  text-indent: -1.3em;
+}
+.section p._a .link:before {
+  content: '';
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-top: 2px solid #607D8B;
+  border-right: 2px solid #607D8B;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin-right: 10px;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Our Service</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+      <div class="header">
+        <a href="top.html"><img src="image/aboutus/header.png"></a>
+      </div>
+
+      <!-- ハンバーガーメニュー -->
+      <div class="hamburger-menu">
+        <input type="checkbox" id="menu-btn-check">
+        <label for="menu-btn-check" class="menu-btn"><span></span></label>
+        <div class="menu-content">
+          <nav>
+            <ul>
+              <li><a href="top.html">TOP</a></li>
+              <li><a href="aboutus.html">ABOUT US</a></li>
+              <li><a href="works.html">WORKS</a></li>
+              <li><a href="ourservice.html">OUR SERVICE</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+        <script>
+         var scrollAnimationElm = document.querySelectorAll('.sa');
+         var scrollAnimationFunc = function() {
+         for(var i = 0; i < scrollAnimationElm.length; i++) {
+         var triggerMargin = 300;
+         if (window.innerHeight > scrollAnimationElm[i].getBoundingClientRect().top + triggerMargin) {
+         scrollAnimationElm[i].classList.add('show');
+         }
+        }
+       }
+        window.addEventListener('load', scrollAnimationFunc);
+        window.addEventListener('scroll', scrollAnimationFunc);
+       </script>
+
+       <!-- Our Service -->
+       <div class="ourservice_wrap">
+         <img src="image/ourservice/ourservice.png">
+            <div class="ourservice_price">
+              <img src="image/TOP/price.png">
+            </div>
+            <div class="ourservice_table">
+              <img src="image/ourservice/plantable.png">
+            </div>
+            <div class="ourservice_text">
+              <img src="image/ourservice/ourservice_text.png">
+            </div>
+       </div>
+
+       <!-- Contact -->
+       <div class="ourservice_contact">
+         <a href="contact.html"><img src="image/TOP/contact.png"></a>
+       </div>
+
+       <!-- Footer -->
+       <div class="fotter">
+         <p>©️2022 kifuyu production</p>
+       </div>
+
+    </body>
+</html>

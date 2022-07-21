@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Us</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+      <div class="header">
+        <a href="top.html"><img src="image/aboutus/header.png"></a>
+      </div>
+
+      <!-- ハンバーガーメニュー -->
+      <div class="hamburger-menu">
+        <input type="checkbox" id="menu-btn-check">
+        <label for="menu-btn-check" class="menu-btn"><span></span></label>
+        <div class="menu-content">
+          <nav>
+            <ul>
+              <li><a href="top.html">TOP</a></li>
+              <li><a href="aboutus.html">ABOUT US</a></li>
+              <li><a href="works.html">WORKS</a></li>
+              <li><a href="ourservice.html">OUR SERVICE</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+        <script>
+         var scrollAnimationElm = document.querySelectorAll('.sa');
+         var scrollAnimationFunc = function() {
+         for(var i = 0; i < scrollAnimationElm.length; i++) {
+         var triggerMargin = 300;
+         if (window.innerHeight > scrollAnimationElm[i].getBoundingClientRect().top + triggerMargin) {
+         scrollAnimationElm[i].classList.add('show');
+         }
+        }
+       }
+        window.addEventListener('load', scrollAnimationFunc);
+        window.addEventListener('scroll', scrollAnimationFunc);
+       </script>
+
+       <!-- About Us -->
+       <div class="aboutus">
+         <img src="image/aboutus/AboutUs.png">
+            <div class="potentiality">
+              <img src="image/aboutus/Potentiality.png">
+            </div>
+            <div class="aboutus_text">
+              <img src="image/aboutus/AboutUs_text.png">
+            </div>
+            <div class="image">
+              <img src="image/aboutus/about_image.png">
+            </div>
+            <div class="vision">
+              <img src="image/aboutus/VISION.png">
+            </div>
+            <div class="vision_text">
+              <img src="image/aboutus/vision_text.png">
+            </div>
+            <div class="mission">
+              <img src="image/aboutus/MISSION.png">
+            </div>
+            <div class="mission_text">
+              <img src="image/aboutus/mission_text.png">
+            </div>
+            <div class="value">
+              <img src="image/aboutus/VALUE.png">
+            </div>
+            <div class="value_text">
+              <img src="image/aboutus/value_text.png">
+            </div>
+            <div class="basedoon">
+              <img src="image/aboutus/Basedon.png">
+            </div>
+            <div class="image">
+              <img src="image/aboutus/aboutus_image2.png">
+            </div>
+            <div class="basedon_text">
+              <img src="image/aboutus/basedon_text.png">
+            </div>
+            <div class="basedon_text2">
+              <img src="image/aboutus/basedon_text2.png">
+            </div>
+            <div class="price">
+              <a href="ourservice.html"><img src="image/aboutus/PRICE.png"></a>
+            </div>
+       </div>
+
+       <div class="fotter">
+         <p>©️2022 kifuyu production</p>
+       </div>
+
+    </body>
+</html>

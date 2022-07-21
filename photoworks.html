@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>movie works</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://ponsyon.com/wp/wp-content/themes/understrap-child/css/slick.css" />
+    </head>
+    <body>
+      <div class="header">
+        <a href="top.html"><img src="image/aboutus/header.png"></a>
+      </div>
+
+      <!-- ハンバーガーメニュー -->
+      <div class="hamburger-menu">
+        <input type="checkbox" id="menu-btn-check">
+        <label for="menu-btn-check" class="menu-btn"><span></span></label>
+        <div class="menu-content">
+          <nav>
+            <ul>
+              <li><a href="top.html">TOP</a></li>
+              <li><a href="aboutus.html">ABOUT US</a></li>
+              <li><a href="works.html">WORKS</a></li>
+              <li><a href="ourservice.html">OUR SERVICE</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+        <script>
+         var scrollAnimationElm = document.querySelectorAll('.sa');
+         var scrollAnimationFunc = function() {
+         for(var i = 0; i < scrollAnimationElm.length; i++) {
+         var triggerMargin = 300;
+         if (window.innerHeight > scrollAnimationElm[i].getBoundingClientRect().top + triggerMargin) {
+         scrollAnimationElm[i].classList.add('show');
+         }
+        }
+       }
+        window.addEventListener('load', scrollAnimationFunc);
+        window.addEventListener('scroll', scrollAnimationFunc);
+       </script>
+
+       <!-- photoworks -->
+       <div class="photoworks2">
+         <img src="image/photoworks/photoworks.png">
+            <div class="work1">
+              <img src="image/photoworks/work01.png" width="5%">
+            </div>
+            <div class="section">
+              <div class="sliderArea">
+                <div class="regular_3 slider">
+                  <div><img src="image/photoworks/DSC_2798.jpg"></div>
+                  <div><img src="image/photoworks/DSC_2798.jpg"></div>
+                  <div><img src="image/photoworks/DSC_2781.jpg"></div>
+                  <div><img src="image/photoworks/DSC_2789.jpg"></div>
+                </div>
+              </div>
+            </div>
+            <script>
+              $(document).on('ready', function() {
+                $(".regular_3").slick({
+                  dots: true,
+                  infinite: true,
+                  slidesToShow: 3,
+                  slidesToScroll: 3
+                });
+              });
+            </script>
+          </div>
+
+    </body>
+</html>

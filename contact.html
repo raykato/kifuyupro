@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>KIFUYU PRODUCTION</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+         <header>
+           <img src="image/TOP/header.JPG">
+         </header>
+
+         <!-- ハンバーガーメニュー -->
+         <div class="hamburger-menu">
+           <input type="checkbox" id="menu-btn-check">
+           <label for="menu-btn-check" class="menu-btn"><span></span></label>
+           <div class="menu-content">
+             <nav>
+               <ul>
+                 <li><a href="top.html">TOP</a></li>
+                 <li><a href="aboutus.html">ABOUT US</a></li>
+                 <li><a href="works.html">PHOTO WORKS</a></li>
+                 <li><a href="works.html">MOVIE WORKS</a></li>
+                 <li><a href="ourservice.html">OUR SERVICE</a></li>
+                 <li><a href="contact.html">Contact</a></li>
+               </ul>
+             </nav>
+           </div>
+         </div>
+           <script>
+            var scrollAnimationElm = document.querySelectorAll('.sa');
+            var scrollAnimationFunc = function() {
+            for(var i = 0; i < scrollAnimationElm.length; i++) {
+            var triggerMargin = 300;
+            if (window.innerHeight > scrollAnimationElm[i].getBoundingClientRect().top + triggerMargin) {
+            scrollAnimationElm[i].classList.add('show');
+            }
+           }
+          }
+           window.addEventListener('load', scrollAnimationFunc);
+           window.addEventListener('scroll', scrollAnimationFunc);
+          </script>
+
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeg8lVLTKwKXnQOZscUd0nIK7ov7OnZLTFj-jJ7RI2Zu-JigQ/viewform?embedded=true" width="640" height="812" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+</body>          
+</html>
